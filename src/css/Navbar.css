@@ -1,0 +1,29 @@
+.navbar {
+  background: linear-gradient(90deg, #26ff00, #00ccff);
+}
+
+.nav-btn {
+  font-weight: 500;
+  color: white !important;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(14, 221, 179, 0.2);
+  color: #fff !important;
+}
+
+.login-btn {
+  background-color: #ff8e4d;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1400cc;
+}

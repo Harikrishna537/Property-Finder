@@ -1,0 +1,77 @@
+/* Root App container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right top, #2b5876, #4e4376);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* React logo styling */
+.App-logo {
+  height: 28vmin;
+  transition: transform 0.6s ease;
+  animation: float 4s ease-in-out infinite;
+}
+.App-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Smooth floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Glass-style header */
+.App-header {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* Link style */
+.App-link {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+.App-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+/* Logo spin fallback */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

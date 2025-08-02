@@ -1,0 +1,105 @@
+.logincontainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align:left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logincontainer input[type="text"],
+.logincontainer input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.logincontainer input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #66aaff;
+  background-color: #ffffff;
+}
+
+.logincontainer button {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+.logincontainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#forgot {
+  display: block;
+  margin-top: 12px;
+  color: #ff4d4d;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+#forgot:hover {
+  color: #cc0000;
+}
+
+#reglink {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+#reglink:hover {
+  color: #004080;
+}
+
+.loglink {
+  text-decoration: none;
+  color: #2a6d11;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.loglink:hover {
+  color: #1c4d08;
+}
+
+h6 {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+body {
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  font-family: 'Segoe UI', sans-serif;
+} 
+
